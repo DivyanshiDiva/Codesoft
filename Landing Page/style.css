@@ -1,0 +1,198 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #444;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #888;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('https://source.unsplash.com/1600x900/?luxury,skincare,pearls') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero .overlay {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1616750819456-5cdee9b85d22?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+                no-repeat center center/cover;
+    opacity: 0.5;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #555;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    background: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: 1px solid #aaa;
+}
+
+.btn:hover {
+    background: #e6e6e6;
+}
+
+/* About Us Section */
+.about {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f9f9f9;
+}
+
+.about img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Products Section */
+/* Products Section */
+.products {
+    text-align: center;
+    padding: 80px 20px;
+    color: #000;
+    background: url('https://plus.unsplash.com/premium_photo-1680740103875-048f39fe05d7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+                no-repeat center center/cover;
+    background-attachment: fixed;
+     /* Parallax effect */
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    background: white;
+}
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1st solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact button {
+    padding: 14px 30px;
+    background: #444;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.contact button:hover {
+    background: #222;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: #f1f1f1;
+    color: #777;
+}
